@@ -1,0 +1,14 @@
+.c-default {
+  margin: 0 auto;
+}
+
+.c-default .c-default__header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.c-default__footer {
+  margin-top: var(--cfpf-spacer-12);
+}
