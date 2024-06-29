@@ -1,0 +1,22 @@
+:root {
+  --cfpf-spacer-0-5: 0.125rem;
+  --cfpf-spacer-1: 0.25rem;
+  --cfpf-spacer-2: 0.5rem;
+  --cfpf-spacer-3: 0.75rem;
+  --cfpf-spacer-4: 1rem;
+  --cfpf-spacer-5: 1.25rem;
+  --cfpf-spacer-6: 1.5rem;
+  --cfpf-spacer-7: 1.75rem;
+  --cfpf-spacer-8: 2rem;
+  --cfpf-spacer-9: 2.25rem;
+  --cfpf-spacer-10: 2.5rem;
+  --cfpf-spacer-11: 2.75rem;
+  --cfpf-spacer-12: 3rem;
+  --cfpf-spacer-14: 3.5rem;
+  --cfpf-spacer-16: 4rem;
+  --cfpf-spacer-20: 5rem;
+  --cfpf-spacer-24: 6rem;
+  --cfpf-spacer-28: 7rem;
+  --cfpf-spacer-32: 8rem;
+  --cfpf-spacer-36: 9rem;
+}

@@ -1,0 +1,155 @@
+@import url("./colors.css");
+@import url("./media.css");
+@import url("./spacers.css");
+@import url("./typography.css");
+
+:root {
+  scroll-behavior: smooth;
+
+  --cfpf-color-link: var(--cfpf-color-primary);
+  --cfpf-color-title: var(--cfpf-color-green-600);
+  --cfpf-length-max-width: 90rem;
+  --cfpf-length-side-margin: 5vw;
+  --cfpf-background-sawdust: url("/images/sawdust.png");
+}
+
+html {
+  font-family: DIN, sans-serif;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: var(--cfpf-font-size-base);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  color: var(--cfpf-color-link);
+}
+
+ul {
+  padding-left: 0.9em;
+}
+
+/* Global layout */
+
+.l-section {
+  padding: var(--cfpf-spacer-8) var(--cfpf-length-side-margin) 0;
+}
+
+.l-section .l-section {
+  /*
+   * With Storyblok nesting, it can happen that we get nested sections.
+   * If it happens, we cancel the duplicated margins
+   */
+  padding: 0;
+}
+
+.l-section:last-child {
+  padding-bottom: var(--cfpf-spacer-8);
+}
+
+.l-section--alt-background {
+  background: var(--cfpf-background-sawdust);
+  margin-top: var(--cfpf-spacer-8);
+  clip-path: polygon(0 0, 15% 2%, 100% 0, 100% 97%, 20% 100%, 0 97%);
+}
+
+.l-section--below-header {
+  /* To have the component go slightly below the header */
+  margin-top: calc(-0.4 * var(--cfpf-length-header-height));
+}
+
+.l-section__title {
+  font-size: var(--cfpf-font-size-title-1);
+  margin-top: var(--cfpf-spacer-6);
+  margin-bottom: var(--cfpf-spacer-8);
+  color: var(--cfpf-color-title);
+}
+
+.l-paragraph {
+  max-width: 45em;
+}
+
+.l-card-list {
+  display: flex;
+  gap: var(--cfpf-spacer-6);
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+
+.l-card-list--fix {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.l-card-list-item {
+  min-width: 20rem;
+  flex-grow: 2;
+  container-type: inline-size;
+}
+
+.l-course-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cfpf-spacer-6);
+}
+
+.l-form-input-base {
+  font-family: DIN, sans-serif;
+  padding: var(--cfpf-spacer-2) var(--cfpf-spacer-4);
+  font-size: var(--cfpf-font-size-base);
+  border: 1px solid var(--cfpf-color-input-field-border);
+  border-radius: 0.3rem;
+}
+
+/* Utility classes */
+
+.u-visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.u-unstyled-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.u-unstyled-button {
+  font-family: inherit;
+  font-size: inherit;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+@media (--sm-and-up) {
+  :root {
+    --cfpf-length-side-margin: 7vw;
+  }
+}
+
+@media (--lg-and-up) {
+  :root {
+    --cfpf-length-side-margin: max(
+      7vw,
+      calc((100vw - var(--cfpf-length-max-width)) / 2)
+    );
+  }
+}

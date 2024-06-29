@@ -1,0 +1,48 @@
+:root {
+  /*
+   * DO NOT USE THESE COLOURS DIRECTLY IN CSS PROPERTIES
+   * Use them only to define semantic colour variables
+   */
+
+  /* Green */
+  --cfpf-color-green-50: #f6fbf4;
+  --cfpf-color-green-100: #e5f4e0;
+  --cfpf-color-green-200: #cae1c1;
+  --cfpf-color-green-300: #93b985;
+  --cfpf-color-green-500: #4b8b33;
+  --cfpf-color-green-600: #3c6f29;
+  --cfpf-color-green-700: #2d531f;
+
+  /* Red */
+  --cfpf-color-red-50: #ffe8e9;
+  --cfpf-color-red-100: #f8d2d4;
+  --cfpf-color-red-500: #da1e28;
+  --cfpf-color-red-600: #ae1820;
+  --cfpf-color-red-700: #871319;
+
+  /* Yellow */
+  --cfpf-color-yellow-50: #fffbf2;
+  --cfpf-color-yellow-100: #fec;
+  --cfpf-color-yellow-700: #960;
+
+  /* Blue */
+  --cfpf-color-blue-100: #ccdcf5;
+  --cfpf-color-blue-700: #003380;
+
+  /* Gray */
+  --cfpf-color-gray-50: #f3f4f7;
+  --cfpf-color-gray-400: #898e99;
+
+  /* Semantic */
+  --cfpf-color-primary: var(--cfpf-color-green-500);
+  --cfpf-color-input-field-border: var(--cfpf-color-green-700);
+  --cfpf-color-info-background: var(--cfpf-color-blue-100);
+  --cfpf-color-info-foreground: var(--cfpf-color-blue-700);
+  --cfpf-color-success-background: var(--cfpf-color-green-100);
+  --cfpf-color-success-foreground: var(--cfpf-color-green-700);
+  --cfpf-color-warning-background: var(--cfpf-color-yellow-100);
+  --cfpf-color-warning-foreground: var(--cfpf-color-yellow-700);
+  --cfpf-color-error: var(--cfpf-color-red-500);
+  --cfpf-color-error-background: var(--cfpf-color-red-100);
+  --cfpf-color-error-foreground: var(--cfpf-color-red-700);
+}

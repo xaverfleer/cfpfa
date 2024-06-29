@@ -1,0 +1,102 @@
+@font-face {
+  font-family: DIN;
+  src:
+    url("/fonts/DIN.woff2") format("woff2"),
+    url("/fonts/DIN.woff") format("woff");
+}
+
+@font-face {
+  font-family: DIN;
+  src:
+    url("/fonts/DINBold.woff2") format("woff2"),
+    url("/fonts/DINBold.woff") format("woff");
+  font-weight: bold;
+}
+
+:root {
+  --cfpf-font-size-xs: 0.75rem;
+  --cfpf-font-size-s: 0.875rem;
+  --cfpf-font-size-m: 1rem; /* = base size */
+  --cfpf-font-size-l: 1.125rem;
+  --cfpf-font-size-xl: 1.25rem;
+  --cfpf-font-size-2xl: 1.5rem;
+  --cfpf-font-size-3xl: 1.875rem;
+  --cfpf-font-size-4xl: 2.25rem;
+  --cfpf-font-size-5xl: 3rem;
+  --cfpf-font-size-6xl: 3.5rem;
+  --cfpf-font-size-7xl: 4.5rem;
+  --cfpf-font-size-8xl: 6rem;
+  --cfpf-font-size-9xl: 8rem;
+
+  /* Responsive, semantic sizes */
+  --cfpf-font-size-title-1: clamp(
+    var(--cfpf-font-size-2xl),
+    3vw,
+    var(--cfpf-font-size-6xl)
+  );
+  --cfpf-font-size-title-2: clamp(
+    var(--cfpf-font-size-xl),
+    2.5vw,
+    var(--cfpf-font-size-3xl)
+  );
+  --cfpf-font-size-title-3: clamp(
+    var(--cfpf-font-size-l),
+    2.25vw,
+    var(--cfpf-font-size-2xl)
+  );
+  --cfpf-font-size-title-4: clamp(
+    var(--cfpf-font-size-m),
+    2vw,
+    var(--cfpf-font-size-xl)
+  );
+  --cfpf-font-size-title-5: clamp(
+    var(--cfpf-font-size-s),
+    1.75vw,
+    var(--cfpf-font-size-l)
+  );
+  --cfpf-font-size-title-6: clamp(
+    var(--cfpf-font-size-xs),
+    1.5vw,
+    var(--cfpf-font-size-m)
+  );
+  --cfpf-font-size-base: clamp(
+    var(--cfpf-font-size-m),
+    2vw,
+    var(--cfpf-font-size-xl)
+  );
+  --cfpf-font-size-base-smaller: clamp(
+    var(--cfpf-font-size-s),
+    1.75vw,
+    var(--cfpf-font-size-l)
+  );
+  --cfpf-font-size-document-link: clamp(
+    var(--cfpf-font-size-l),
+    2.25vw,
+    var(--cfpf-font-size-2xl)
+  );
+  --cfpf-font-size-main-nav-item: clamp(
+    var(--cfpf-font-size-m),
+    2vw,
+    var(--cfpf-font-size-xl)
+  );
+  --cfpf-font-size-sub-nav: clamp(
+    var(--cfpf-font-size-m),
+    2vw,
+    var(--cfpf-font-size-xl)
+  );
+  --cfpf-font-size-sub-nav-section-title: clamp(
+    var(--cfpf-font-size-m),
+    2vw,
+    var(--cfpf-font-size-xl)
+  );
+  --cfpf-font-size-card-date-days: clamp(
+    var(--cfpf-font-size-2xl),
+    2.5vw,
+    var(--cfpf-font-size-4xl)
+  );
+  --cfpf-font-size-card-date-months: clamp(
+    var(--cfpf-font-size-s),
+    1.75vw,
+    var(--cfpf-font-size-m)
+  );
+}

@@ -1,0 +1,5 @@
+@custom-media --xs-only (width <= 40em);
+@custom-media --sm-and-up (40em < width);
+@custom-media --md-and-up (60em < width);
+@custom-media --lg-and-up (80em < width);
+@custom-media --xl-and-up (120em < width);
